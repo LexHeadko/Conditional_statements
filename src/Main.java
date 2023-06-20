@@ -9,11 +9,11 @@ public class Main {
     }
 
     public static void task1() {
-        int p = 2;
-        if (p % 2 == 1 || p == 0) {
-            System.out.println("p - нечетное число!");
-        }else {
+        int p = 4;
+        if (p % 2 == 0 && p != 0) {
             System.out.println("p - четное число!");
+        }else {
+            System.out.println("p - нечетное число!");
         }
     }
 }
