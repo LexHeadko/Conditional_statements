@@ -69,7 +69,7 @@ public class Main {
             if (b < c) {
                 System.out.println(a+""+b+""+c);
             }else{
-            System.out.print(a+""+c+""+b);}}
+            System.out.println(a+""+c+""+b);}}
         else if (b < a && b < c) {
             if (a < c) {
                 System.out.println(b + "" + a + "" + c);
@@ -86,6 +86,12 @@ public class Main {
     }
 
     public static void task6() {
-
+        System.out.println("Task 6");
+        int localTime = ThreadLocalRandom.current().nextInt(28801);
+        int workTime = 28800;
+        int endTimeSec= workTime-localTime;
+        double endTimeHours = endTimeSec / 3600;
+        System.out.println(endTimeSec + " секунд до конца рабочего дня");
+        System.out.println(Math.round(endTimeHours)+ " часов до конца рабочего дня");
     }
 }
