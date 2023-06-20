@@ -8,7 +8,7 @@ public class Main {
         task2();
         task3();
         task4();
-        //task5();
+        task5();
         //task6();
     }
 
@@ -58,5 +58,31 @@ public class Main {
         } else {
             System.out.println("Наибольшим членом числа " + a + ", является число " + units+"!");
         }
+    }
+
+    public static void task5() {
+        System.out.println("Task 5");
+        int a=5;
+        int b=7;
+        int c=6;
+        if (a < b && a < c) {
+            if (b < c) {
+                System.out.println(a+""+b+""+c);
+            }else{
+            System.out.print(a+""+c+""+b);}}
+        if (b < a && b < c) {
+            if (a < c) {
+                System.out.println(b + "" + a + "" + c);
+            } else {
+                System.out.println(b + ""+ c+""+a);
+            }}
+        if (c < a && c < b) {
+            if (a < b) {
+                System.out.println(c + "" + a + "" + b);
+            } else {
+                System.out.println(c+""+b+""+""+a);
+            }
+        }
+
     }
 }
