@@ -9,7 +9,7 @@ public class Main {
         task3();
         task4();
         task5();
-        //task6();
+        task6();
     }
 
     public static void task1() {
@@ -62,7 +62,7 @@ public class Main {
 
     public static void task5() {
         System.out.println("Task 5");
-        int a=5;
+        int a=-8;
         int b=7;
         int c=6;
         if (a < b && a < c) {
@@ -70,19 +70,22 @@ public class Main {
                 System.out.println(a+""+b+""+c);
             }else{
             System.out.print(a+""+c+""+b);}}
-        if (b < a && b < c) {
+        else if (b < a && b < c) {
             if (a < c) {
                 System.out.println(b + "" + a + "" + c);
             } else {
                 System.out.println(b + ""+ c+""+a);
             }}
-        if (c < a && c < b) {
+        else {
             if (a < b) {
                 System.out.println(c + "" + a + "" + b);
             } else {
                 System.out.println(c+""+b+""+""+a);
             }
         }
+    }
+
+    public static void task6() {
 
     }
 }
