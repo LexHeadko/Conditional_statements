@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.random.RandomGenerator;
 
 public class Main {
@@ -6,7 +7,7 @@ public class Main {
         task1();
         task2();
         task3();
-        //task4();
+        task4();
         //task5();
         //task6();
     }
@@ -41,6 +42,21 @@ public class Main {
             System.out.println("a = " + a + " в диапазоне от 22 до 99!");
         } else {
             System.out.println("a = " + a + " не в диапазоне от 22 до 99!");
+        }
+    }
+
+    public static void task4() {
+        System.out.println("Task 4");
+        int a = ThreadLocalRandom.current().nextInt(100, 999 + 1);
+        int hundreds = a/100;
+        int tens = (a - hundreds*100)/10;
+        int units = (a - hundreds * 100 - tens * 10);
+        if (hundreds > tens && hundreds > units) {
+            System.out.println("Наибольшим членом числа " + a + ", является число " + hundreds+"!");
+        } else if (tens > hundreds && tens > units) {
+            System.out.println("Наибольшим членом числа " + a + ", является число " + tens+"!");
+        } else {
+            System.out.println("Наибольшим членом числа " + a + ", является число " + units+"!");
         }
     }
 }
